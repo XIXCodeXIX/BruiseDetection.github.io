@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bruise Detection</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Bruise Time Healer</h1>
+        <label for="fileInput" class="file-label">Choose an image</label>
+        <input type="file" id="fileInput" accept="image/*">
+        <button onclick="uploadImage()">Analyze</button>
+        <div id="canvasContainer"></div>
+        <div id="result" class="result"></div>
+        <div class="color-info-container">
+            <div id="pinkred" class="color-info pinkred"></div>
+            <div id="bluepurple" class="color-info bluepurple"></div>
+            <div id="yellowgreen" class="color-info yellowgreen"></div>
+            <div id="brownyellow" class="color-info brownyellow"></div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
